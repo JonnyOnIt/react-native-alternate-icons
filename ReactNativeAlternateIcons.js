@@ -32,7 +32,7 @@ var ReactNativeAlternateIcons = {
         });
     },
     supportDevice(callback) {
-        isIos
+        isIos()
             ? NativeReactNativeAlternateIcons.supportDevice(result => {
                 callback(result.supported);
             })
