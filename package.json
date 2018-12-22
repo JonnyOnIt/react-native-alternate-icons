@@ -2,7 +2,6 @@
   "name": "react-native-alternate-icons",
   "version": "0.4.0",
   "description": "React Native Alternate Icons for iOS 10.3+",
-  "main": "ReactNativeAlternateIcons.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,6 +19,12 @@
     "10.3+"
   ],
   "author": "Joey Kamsteeg <joey@kamsteegsoftware.nl>",
+  "files": [
+    "android/",
+    "ios/",
+    "index.js",
+    "react-native-alternate-icons.podspec"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kamsteegsoftware/react-native-alternate-icons/issues"

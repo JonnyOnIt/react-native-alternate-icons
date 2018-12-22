@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13BE3DEE1AC21097009241FE /* ReactNativeAlternateIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BE3DED1AC21097009241FE /* ReactNativeAlternateIcons.m */; };
+		8967649521CEBB66003BF79C /* ReactNativeAlternateIcons.m in Sources */ = {isa = PBXBuildFile; fileRef = 8967649421CEBB66003BF79C /* ReactNativeAlternateIcons.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,8 +24,8 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libReactNativeAlternateIcons.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactNativeAlternateIcons.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		13BE3DEC1AC21097009241FE /* ReactNativeAlternateIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactNativeAlternateIcons.h; sourceTree = "<group>"; };
-		13BE3DED1AC21097009241FE /* ReactNativeAlternateIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactNativeAlternateIcons.m; sourceTree = "<group>"; };
+		8967649321CEBB55003BF79C /* ReactNativeAlternateIcons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ReactNativeAlternateIcons.h; path = ReactNativeAlternateIcons/ReactNativeAlternateIcons.h; sourceTree = SOURCE_ROOT; };
+		8967649421CEBB66003BF79C /* ReactNativeAlternateIcons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReactNativeAlternateIcons.m; path = ReactNativeAlternateIcons/ReactNativeAlternateIcons.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,10 +50,19 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				13BE3DEC1AC21097009241FE /* ReactNativeAlternateIcons.h */,
-				13BE3DED1AC21097009241FE /* ReactNativeAlternateIcons.m */,
+				89003C6A21CEBA59003FB7C5 /* ReactNativeAlternateIcons */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		89003C6A21CEBA59003FB7C5 /* ReactNativeAlternateIcons */ = {
+			isa = PBXGroup;
+			children = (
+				8967649321CEBB55003BF79C /* ReactNativeAlternateIcons.h */,
+				8967649421CEBB66003BF79C /* ReactNativeAlternateIcons.m */,
+			);
+			name = ReactNativeAlternateIcons;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,7 +121,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13BE3DEE1AC21097009241FE /* ReactNativeAlternateIcons.m in Sources */,
+				8967649521CEBB66003BF79C /* ReactNativeAlternateIcons.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,10 +206,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../React/**",
-					"$(SRCROOT)/../../node_modules/react-native/React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+					"${SYMROOT}",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/**",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
@@ -213,9 +221,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+					"${SYMROOT}",
+					"$(SRCROOT)/../../../ios/Pods/Headers/Public/**",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
